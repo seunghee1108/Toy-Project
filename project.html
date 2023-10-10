@@ -28,7 +28,7 @@
 </head>
 <body>
   <div id = "root">
-    <!-- handimg -->
+    <!-- hand img -->
     <div id = "img"></div>
   </div>
   <script>
@@ -52,11 +52,17 @@
       clap.style.backgroundSize = "contain"
        img.remove()
       audio.play()
-      let interval = setInterval(function(){
-      
-      const clap = document.createElement("div");
-        root.appendChild(clap);
-
+      let interval = setInterval(function() { 
+      const clap = document.createElement("div")
+      root.appendChild(clap);
+      clap.style.backgroundImage = "url(./photo/pngegg.png)"
+      clap.style.width = "70vw"
+      clap.style.height = "60vh"
+      clap.style.position = "absolute"
+      clap.style.display = "flex"
+        setInterval(function(){
+          clap.style.background = "none"
+        })  
       }, 1000)
     };
   </script>
