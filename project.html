@@ -35,7 +35,7 @@
     const root = document.getElementById("root")
     console.dir(root)
     const img = document.getElementById("img")
-  //  console.dir(img)
+   // console.dir(img)
     var audio = new Audio("bgm.mp3");
 
     img.addEventListener('click', transition)
@@ -52,6 +52,8 @@
       clap.style.backgroundSize = "contain"
        img.remove()
       audio.play()
+
+      
       let interval = setInterval(function() { 
       const clap = document.createElement("div")
       root.appendChild(clap);
