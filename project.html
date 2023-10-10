@@ -48,17 +48,24 @@
     console.dir(root)
     const img = document.getElementById("img")
   //  console.dir(img)
+    var audio = new Audio("bgm.mp3");
+    // const audio = document.getElementById("myAudio")
 
     img.addEventListener('click', function(){
       const clap = document.createElement("div");
       root.children[0].appendChild(clap);
 
-      clap.style.backgroundImage = "url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Emoji_u1f44f.svg/2048px-Emoji_u1f44f.svg.png)"
-      clap.style.width = "50vw"
+      clap.style.backgroundImage = "url(./photo/pngegg.png)"
+      clap.style.width = "70vw"
       clap.style.height = "60vh"
       clap.style.position = "absolute"
       clap.style.display = "flex"
       clap.style.backgroundRepeat = "no-repeat"
+      clap.style.backgroundSize = "contain"
+      
+
+
+    
     });
   </script>
 </body>
