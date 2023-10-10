@@ -41,6 +41,7 @@
     img.addEventListener('click', transition)
     function transition(){
       const clap = document.createElement("div");
+      // click했을때 img부분 지우기 위해 children[0]부분을 삭제
       root.appendChild(clap);
 
       clap.style.backgroundImage = "url(./photo/pngegg.png)"
@@ -53,12 +54,12 @@
        img.remove()
       audio.play()
       
-      setTimeout(function(){
+      setInterval(function(){
         clap.remove()
       }, 2000);
-      setTimeout(function({
-        
-      }))
+      setTimeout(function(){
+        clap.
+      })
     };
   </script>
 </body>
