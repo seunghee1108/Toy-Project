@@ -19,19 +19,9 @@
     }
     #img{
       width: 70vw;
-      height: 80vh;
+      height: 60vh;
       background-image: url(./photo/pngwing.com.png) ;
       background-repeat: no-repeat;
-    }
-    #button{
-      width: 100px;
-      height: 50px;
-      background-color: bisque;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 40%;
-      font-size: 1.5em;
     }
      
   </style>
@@ -40,8 +30,6 @@
   <div id = "root">
     <!-- handimg -->
     <div id = "img"></div>
-
-    <div></div>
   </div>
   <script>
     const root = document.getElementById("root")
@@ -49,12 +37,11 @@
     const img = document.getElementById("img")
   //  console.dir(img)
     var audio = new Audio("bgm.mp3");
-    // const audio = document.getElementById("myAudio")
 
-    
-    img.addEventListener('click', function(){
+    img.addEventListener('click', transition)
+    function transition(){
       const clap = document.createElement("div");
-      root.children[0].appendChild(clap);
+      root.appendChild(clap);
 
       clap.style.backgroundImage = "url(./photo/pngegg.png)"
       clap.style.width = "70vw"
@@ -63,11 +50,16 @@
       clap.style.display = "flex"
       clap.style.backgroundRepeat = "no-repeat"
       clap.style.backgroundSize = "contain"
+       img.remove()
+      audio.play()
       
-
-
-    
-    });
+      setTimeout(function(){
+        clap.remove()
+      }, 2000);
+      setTimeout(function({
+        
+      }))
+    };
   </script>
 </body>
 </html>
