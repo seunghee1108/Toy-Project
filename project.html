@@ -18,8 +18,8 @@
       align-items: center;
     }
     #img{
-      width: 50vw;
-      height: 70vh;
+      width: 70vw;
+      height: 80vh;
       background-image: url(./photo/pngwing.com.png) ;
       background-repeat: no-repeat;
     }
@@ -41,20 +41,25 @@
     <!-- handimg -->
     <div id = "img"></div>
 
-    <!-- click button -->
-    <div id = "button">button!</div>
+    <div></div>
   </div>
   <script>
     const root = document.getElementById("root")
     console.dir(root)
-    const img = document.getElementsById("img")
-    const button = document.getElementById("button")
+    const img = document.getElementById("img")
+  //  console.dir(img)
 
-    button.addEventListener('click', function(){
-      let interval = setInterval(function(){
-        const 
-      })
-    })
+    img.addEventListener('click', function(){
+      const clap = document.createElement("div");
+      root.children[0].appendChild(clap);
+
+      clap.style.backgroundImage = "url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Emoji_u1f44f.svg/2048px-Emoji_u1f44f.svg.png)"
+      clap.style.width = "50vw"
+      clap.style.height = "60vh"
+      clap.style.position = "absolute"
+      clap.style.display = "flex"
+      clap.style.backgroundRepeat = "no-repeat"
+    });
   </script>
 </body>
 </html>
