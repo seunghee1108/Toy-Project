@@ -13,17 +13,50 @@
     #root {
       width: 100vw;
       height: 100vh;
-      
-      
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+    #img{
+      width: 50vw;
+      height: 70vh;
+      background-image: url(./photo/pngwing.com.png) ;
+      background-repeat: no-repeat;
+    }
+    #button{
+      width: 100px;
+      height: 50px;
+      background-color: bisque;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 40%;
+      font-size: 1.5em;
+    }
+     
   </style>
 </head>
 <body>
   <div id = "root">
-    <!-- box -->
-    <div></div>
+    <!-- handimg -->
+    <div id = "img"></div>
+
     <!-- click button -->
-    <div></div>
+    <div id = "button">button!</div>
+  
+
   </div>
+  <script>
+    const root = document.getElementById("root")
+    console.dir(root)
+    const img = document.getElementsById("img")
+    const button = document.getElementById("button")
+
+    button.addEventListener('click', function(){
+      let interval = setInterval(function(){
+        const 
+      })
+    })
+  </script>
 </body>
 </html>
