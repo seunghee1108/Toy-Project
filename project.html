@@ -43,7 +43,6 @@
       const clap = document.createElement("div");
       // click했을때 img부분 지우기 위해 children[0]부분을 삭제
       root.appendChild(clap);
-
       clap.style.backgroundImage = "url(./photo/pngegg.png)"
       clap.style.width = "70vw"
       clap.style.height = "60vh"
@@ -53,13 +52,12 @@
       clap.style.backgroundSize = "contain"
        img.remove()
       audio.play()
+      let interval = setInterval(function(){
       
-      setInterval(function(){
-        clap.remove()
-      }, 2000);
-      setTimeout(function(){
-        clap.
-      })
+      const clap = document.createElement("div");
+        root.appendChild(clap);
+
+      }, 1000)
     };
   </script>
 </body>
